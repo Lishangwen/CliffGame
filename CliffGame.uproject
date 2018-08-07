@@ -1,0 +1,17 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{60A31440-4105-A367-3505-23970393036C}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "CliffGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"CoreUObject"
+			]
+		}
+	]
+}

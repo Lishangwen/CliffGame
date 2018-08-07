@@ -1,0 +1,11 @@
+Binaries
+Intermediate
+Saved
+.DS_Store
+.vscode
+.vs
+*.sln
+DerivedDataCache
+Build
+democpp.code-workspace
+Config
