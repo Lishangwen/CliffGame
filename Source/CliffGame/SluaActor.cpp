@@ -77,7 +77,7 @@ void ASluaActor::BeginPlay()
 		ensure(t.getFromTable<int>(5) == 1024);
 	}
 
-	state->call("xx.text");
+	//state->call("xx.text");
 
 }
 

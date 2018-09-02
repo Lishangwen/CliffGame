@@ -1,19 +1,24 @@
-xx={}
+TestUI= TestUI or
+{
 
-function xx.text()
+}
+
+function TestUI.text()
 end
 
 local ui=slua.loadUI('/Game/Panel.Panel');
 ui:AddToViewport(0);
 local btn2=ui:FindWidget('Button1');
 
-btn2.OnClicked:Add(function()
-    print('Button 2 clicked!!!!')
-end)
-
-function BtnClicked()
+function TestUI.AA()
     print('Button 2 clicked!!!!');
 end
+
+btn2.OnClicked:Add(TestUI.AA);            -- 绑定方式1：函数绑定，但是函数需要先定义再绑定
+
+btn2.OnClicked:Add(function ()            -- 绑定方式2：闭包函数绑定
+    print('Button 2 clicked!!!!');
+end)
 
 function update(dt,actor)
    
