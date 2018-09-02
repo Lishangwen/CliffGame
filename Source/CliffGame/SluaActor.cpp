@@ -62,7 +62,8 @@ void ASluaActor::BeginPlay()
 
 		return nullptr;
 	});
-	slua::LuaVar v = state->doFile("Test");
+	slua::LuaVar v = state->doFile("TestUI");
+	
 	if (!v.isNil()) {
 		ensure(v.isTuple());
 		ensure(v.count() == 5);
@@ -77,6 +78,7 @@ void ASluaActor::BeginPlay()
 	}
 
 	state->call("xx.text");
+
 }
 
 // Called every frame
