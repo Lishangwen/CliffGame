@@ -15,7 +15,7 @@ function TestUI.AA()
     --ui:RemoveFromParent();
 end
 
-btn2.OnClicked:Add(TestUI.AA);            -- 绑定方式1：函数绑定，但是函数需要先定义再绑定
+btn2.OnClicked:Add(TestUI.AA);           -- 绑定方式1：函数绑定，但是函数需要先定义再绑定
 
 --[[
 btn2.OnClicked:Add(function ()            -- 绑定方式2：闭包函数绑定
