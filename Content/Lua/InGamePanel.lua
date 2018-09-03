@@ -14,6 +14,9 @@ textBlood:SetText(InGamePanel.bloodValue);
 -- 加血按钮点击事件
 function InGamePanel.OnAddBloodBtnClick()
     InGamePanel.bloodValue=InGamePanel.bloodValue+10;
+    if InGamePanel.bloodValue>200 then
+        InGamePanel.bloodValue=200;
+    end
     textBlood:SetText(InGamePanel.bloodValue);
 end
 

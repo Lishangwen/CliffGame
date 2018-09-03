@@ -24,6 +24,7 @@ class SLUA_UNREAL_API USluaComponent : public USceneComponent
 {
 	GENERATED_BODY()
 
+
 public:	
 	// Sets default values for this component's properties
 	USluaComponent();
