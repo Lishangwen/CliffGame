@@ -62,7 +62,7 @@ void ASluaActor::BeginPlay()
 
 		return nullptr;
 	});
-	slua::LuaVar v = state->doFile("TestUI");
+	slua::LuaVar v = state->doFile("InGamePanel");
 	
 	if (!v.isNil()) {
 		ensure(v.isTuple());
