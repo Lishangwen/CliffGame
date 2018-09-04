@@ -4,7 +4,7 @@ InGamePanel= InGamePanel or
     bloodValue=0  --血量
 };
 
-local ui=slua.loadUI('/Game/UMG/InGamePanel.InGamePanel');
+local ui=slua.loadUI('/Game/Blueprints/UMG/InGamePanel.InGamePanel');
 ui:AddToViewport(0);
 
 local textBlood=ui:FindWidget('TextBlood');
